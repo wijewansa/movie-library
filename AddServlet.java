@@ -76,8 +76,8 @@ public class AddServlet extends HttpServlet {
         //processRequest(request, response);
         String mtitle = request.getParameter("title");
         String mprod = request.getParameter("prod");
-        String mdir = request.getParameter("dirt");
-        int myear = Integer.parseInt(request.getParameter("year"))
+        String mdir = request.getParameter("dir");
+        int myear = Integer.parseInt(request.getParameter("year"));
         Movie m= new Movie();
         m.addMovie(mtitle,mprod,mdir,myear);
     }
